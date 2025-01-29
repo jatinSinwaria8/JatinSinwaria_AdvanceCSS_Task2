@@ -1,0 +1,791 @@
+/* universal selector for defaulting margin 0 padding 0 
+box-sizing border box and font-size 0 throughout */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  box-sizing: border-box;
+}
+/* paddLR is common padding from left and right which is 200px 
+and paddTB is top and bottom padding which is 100px  */
+.paddLR {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.paddTB {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* class used for hover effects on certain buttons */
+.hovering:hover {
+  color: white;
+  background-color: #d0a904;
+  border: 2px solid #d0a904;
+}
+/* header contains navbar and heading */
+header {
+  /* 100vh is used so the the header can be displayed as window size */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* navbar includes Main Logo some links and a mail image */
+.navbar {
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headLogo img {
+  height: 100px;
+}
+.navLinks {
+  display: flex;
+}
+.linkItem {
+  height: 80px;
+  margin-left: 50px;
+  display: flex;
+  text-decoration: none;
+}
+.linkItem p {
+  margin: auto;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  font-family: Montserrat, monospace;
+  text-transform: uppercase;
+}
+/* its the down arrow near blog link */
+.darrow {
+  width: 8px;
+  height: 8px;
+  margin: auto;
+  margin-left: 5px;
+}
+/* mail image */
+.mail {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  margin-left: 40px;
+}
+/* Main heading container */
+.headingContainer {
+  /* background image of heading container */
+  background-image: url("ex-1/images/img-1.jpg");
+  background-position: center;
+}
+/* common blue color background with some opacity to be put 
+above the background image */
+.bgColorOpacity {
+  background-color: rgba(17, 18, 49, 85%);
+}
+/* main heading container with top heading, 
+a paragraph and a button */
+.heading {
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position relative used for the
+   downwards arrow at bottom of heading container */
+  position: relative;
+}
+.topHeading {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topHeading h2,
+.topHeading .normal {
+  font-size: 70px;
+  color: white;
+  font-family: "Roboto", serif;
+  text-align: center;
+}
+/* normal class is used to lower the weight of some specific words in headings */
+.normal {
+  font-weight: 100;
+  /* font-weight: normal; */
+}
+.heading p {
+  color: white;
+  font-size: 18px;
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  text-align: center;
+}
+.headingButtons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.headingButtons button {
+  margin: 10px;
+  font-size: 16px;
+  padding: 20px 40px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: Montserrat, monospace;
+  cursor: pointer;
+  color: white;
+  border: 2px solid white;
+  background: transparent;
+}
+/* styling of downwards arrow in heading container */
+.heading img {
+  /* position absolute used for positioning */
+  position: absolute;
+  height: 15px;
+  width: 22.5px;
+  top: 93%;
+}
+/* Section 1 styling containing introduction */
+.section1 {
+  height: 750px;
+  background-color: white;
+}
+/* subsection1 contains helloworld and image sections  */
+.subSection1 {
+  display: flex;
+}
+.helloWorld {
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+/* styling of normal class h2 and p tags */
+.helloWorld h2,
+.helloWorld .normal {
+  font-size: 60px;
+  color: #4f1d4d;
+  font-family: "Roboto", serif;
+  padding-bottom: 25px;
+}
+.helloWorld p {
+  color: #4f1d4d;
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  padding-bottom: 25px;
+}
+
+/* image container contains small logo images and h5 headings */
+.imageContainer1 {
+  height: 45px;
+  margin: 15px 0px;
+  display: flex;
+}
+.imageContainer1 img {
+  height: 45px;
+  width: 45px;
+}
+.imageContainer1 h5 {
+  margin-left: 20px;
+  color: #4f1d4d;
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/* image section of section1 */
+.helloImage {
+  margin-left: 20px;
+  width: calc(60% - 20px);
+  height: 550px;
+}
+.helloImage img {
+  width: 100%;
+  height: 100%;
+}
+/* section 2 background image  */
+.section2 {
+  background-image: url("ex-1/images/img-2.jpg");
+  background-position: center;
+}
+/* services contains main heading and individual services container */
+.services {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services h2,
+.services .normal {
+  font-size: 60px;
+  color: white;
+  font-family: "Roboto", serif;
+  text-align: center;
+}
+
+.serviceContainer {
+  margin: 60px 0px;
+  display: flex;
+  width: 100%;
+}
+/* styling of individual services in side services container column vise */
+.individualService {
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(33% - 40px);
+}
+/* a common class fo faded white background behind some images */
+.whiteOpacity {
+  height: 115px;
+  width: 115px;
+  background-color: rgba(255, 255, 255, 10%);
+  border-radius: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+.individualService img {
+  height: 60px;
+  width: 60px;
+  margin: auto;
+}
+.individualService h5 {
+  color: white;
+  font-size: 20px;
+  font-family: Montserrat;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.individualService p {
+  color: white;
+  font-size: 18px;
+  font-family: Montserrat;
+  text-align: center;
+  font-weight: 300;
+}
+/* orderservices button in services container */
+.orderService {
+  margin: 10px;
+  font-size: 15px;
+  padding: 20px 45px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 550;
+  font-family: Montserrat, monospace;
+  cursor: pointer;
+  color: white;
+  border: 2px solid white;
+  background: transparent;
+}
+/* section 3 contains the image grid */
+.section3 {
+  height: 1600px;
+  background-color: white;
+}
+/* this is styling of image content container with heading and buttons */
+.imageContentALL {
+  height: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.imageContent {
+  display: flex;
+  flex-direction: column;
+}
+/* This section's Heading's styling */
+.imageContent h2,
+.imageContent h2 .normal {
+  font-size: 60px;
+  color: #4f1d4d;
+  font-family: "Roboto", serif;
+  /* text-align: center; */
+  margin-bottom: 40px;
+}
+
+.imageContent h5,
+h5 .normal {
+  font-size: 20px;
+  color: #4f1d4d;
+  font-family: "Roboto", serif;
+  /* text-align: center; */
+  /* margin-bottom: 30px; */
+}
+/* stylings for button above the image grid */
+.imageButtons {
+  height: 70px;
+}
+.imageButtons button {
+  height: 70px;
+  width: 140px;
+  margin: 0px 5px;
+  font-size: 15px;
+  font-weight: 550;
+  color: #4f1d4d;
+  text-decoration: none;
+  font-family: Montserrat, monospace;
+  text-transform: uppercase;
+  border: 0px;
+  cursor: pointer;
+  background-color: white;
+}
+.imageButtons button:hover {
+  background-color: #00000014;
+}
+/* Css grid used for image grid styling */
+.imageGrid {
+  margin-top: 50px;
+  height: calc(72% - 50px);
+
+  display: grid;
+  /* repeat function for 3 rows and 3 columns */
+  grid-template-columns: repeat(3, calc(33% - 20px));
+  grid-template-rows: repeat(3, calc(33% - 20px));
+  /* gap btw rows and columns */
+  gap: 30px;
+}
+.gridItem1 {
+  /* this class styles a row by giving it a span of 2 rows */
+  grid-row: span 2;
+}
+.gridItem1 img {
+  width: 100%;
+  height: 100%;
+  /* object-fit used to fit the image 
+  perfectly inside this container */
+  object-fit: cover;
+}
+
+.gridItem2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Section 4 container with its background image */
+.section4 {
+  height: 450px;
+  background-image: url("ex-1/images/img-4.jpg");
+  background-position: center;
+}
+.numbers {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+/* individualnumbers Container Styling with an image and heading and numbers */
+.individualNumbers {
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(25% - 40px);
+}
+.individualNumbers img {
+  height: 60px;
+  width: 60px;
+  margin: auto;
+}
+/* for white text in */
+.txtWhite {
+  color: white;
+}
+/* for orange text */
+.txtOrg {
+  color: #d0a904;
+}
+.individualNumbers h5 {
+  font-size: 20px;
+  font-family: Montserrat;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.individualNumbers h2 {
+  font-size: 50px;
+  font-family: Montserrat;
+  text-align: center;
+  font-weight: 550;
+}
+/* Section 5 with pricing plans styling */
+.section5 {
+  height: 1000px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+/* main heading styling of this section */
+.section5 h2,
+.section5 h2 .normal {
+  font-size: 60px;
+  color: #4f1d4d;
+  font-family: "Roboto", serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section5 p {
+  font-size: 18px;
+  color: gray;
+  font-family: "Roboto", serif;
+  text-align: center;
+  font-weight: 300;
+}
+/* price container contains individual price columns */
+.priceContainer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* individual columns of price styling */
+.indiPrice {
+  width: 31%;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 10%);
+  padding: 30px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.indiPrice h4 {
+  font-size: 40px;
+  color: #4f1d4d;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.indiPrice p {
+  font-size: 18px;
+  color: gray;
+  font-family: "Roboto", serif;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.midPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 270px;
+}
+.midPrice h4,
+.midPrice h4 .big {
+  color: #4f1d4d;
+  font-family: "Roboto", serif;
+  text-align: center;
+  /* margin-bottom: 30px; */
+}
+.midPrice h4 {
+  font-size: 25px;
+}
+.big {
+  font-size: 50px;
+}
+/* used to print text in normal format */
+.wtDark {
+  color: rgba(127, 127, 127, 100%);
+}
+/* used to print text very lightly for features
+ which are not available */
+.wtLight {
+  font-weight: 100;
+  color: rgba(127, 127, 127, 25%);
+}
+.midPrice h5 {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+  text-align: center;
+  /* margin-bottom: 30px; */
+}
+/* styling of buttons in price section */
+.priceButton {
+  margin: 10px;
+  font-size: 15px;
+  padding: 20px 60px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 550;
+  font-family: Montserrat, monospace;
+  cursor: pointer;
+  color: #4f1d4d;
+  border: 2px solid #4f1d4d;
+  background: transparent;
+  text-transform: uppercase;
+}
+/* Section 6 is styling of about us section */
+.section6 {
+  height: 750px;
+  background-image: url("ex-1/images/img-3.jpg");
+  background-position: center;
+}
+.aboutUs {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.topAboutUs {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+/* main heading of this section */
+.topAboutUs h2,
+.topAboutUs h2 .normal {
+  font-size: 60px;
+  color: white;
+  font-family: "Roboto", serif;
+  /* text-align: center; */
+  /* margin-bottom: 30px; */
+}
+.section6 p {
+  font-size: 22px;
+  color: gray;
+  font-family: "Roboto", serif;
+  /* text-align: center; */
+  font-weight: 300;
+}
+.topButtons {
+  display: flex;
+}
+.topButtonStyle {
+  cursor: pointer;
+  width: 90px;
+  height: 90px;
+  display: flex;
+}
+/* top buttons styling  */
+.topButton {
+  background-color: #3a376c;
+  border: 0.5px black solid;
+}
+.topButtonStyle img {
+  height: 15px;
+  width: 15px;
+  margin: auto;
+  object-fit: cover;
+}
+/* bottom container with individual information about developers 
+with their image and information */
+.bottomAboutUs {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* individual section stylings */
+.bottomAboutUsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+}
+.bottomAboutUsSection img {
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  margin-bottom: 40px;
+}
+.bottomAboutUsSection h3 {
+  font-size: 24px;
+  color: white;
+  font-family: "Roboto", serif;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.bottomAboutUsSection h4 {
+  font-size: 15px;
+  color: white;
+  font-family: "Roboto", serif;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.bottomAboutUsSection p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 80%);
+  font-family: "Roboto", serif;
+  text-align: center;
+  font-weight: 100;
+}
+/* Section 7 containing blogs columns
+with their stylings */
+.section7 {
+  height: 1000px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+/* Main heading styling */
+.section7 h2,
+.section7 h2 .normal {
+  font-size: 60px;
+  color: #4f1d4d;
+  font-family: "Roboto", serif;
+  /* text-align: center; */
+  margin-bottom: 30px;
+}
+.section7 p {
+  font-size: 20px;
+  color: gray;
+  font-family: "Roboto", serif;
+  /* text-align: center; */
+  font-weight: 300;
+}
+.blogContainer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* individual column styling */
+.indiBlog {
+  width: 31%;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 3%;
+}
+/* image styling inside the column */
+.indiBlog img {
+  height: 50%;
+  width: 100%;
+  border-radius: 3% 3% 0% 0%;
+}
+.bottomBlog {
+  padding: 40px;
+  height: 50%;
+}
+.bottomBlog h3 {
+  font-size: 20px;
+  color: #4f1d4d;
+  font-family: "Roboto", serif;
+  /* text-align: center; */
+  margin-bottom: 20px;
+}
+.bottomBlog p {
+  font-size: 16px;
+  color: gray;
+  font-family: "Roboto", serif;
+  /* text-align: center; */
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+/* readmore button styling */
+.blogButton {
+  flex-grow: 0;
+  font-size: 15px;
+  padding: 20px 50px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 550;
+  font-family: Montserrat, monospace;
+  cursor: pointer;
+  color: #4f1d4d;
+  border: 2px solid #4f1d4d;
+  background: transparent;
+  text-transform: uppercase;
+}
+/* footer section contains logo various links, 
+email newsletter section and a copyright statement */
+footer {
+  height: 500px;
+  background-color: #3a376c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* styling of logo in footer */
+footer > img {
+  height: 100px;
+  width: 250px;
+  margin-right: auto;
+}
+/* bottom of footer with top border containing copyright statement */
+.footerBottom {
+  width: 100%;
+  padding: 20px 0px;
+  border-top: 2px rgba(128, 128, 128, 0.354) solid;
+}
+.footerBottom p {
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.356);
+  font-size: 14px;
+  font-family: "Roboto";
+}
+/* mid section contains some individual link sections */
+.footerMid {
+  display: flex;
+  justify-content: space-between;
+}
+.indisection {
+  display: flex;
+  flex-direction: column;
+}
+/* headings in individual sections */
+.indisection h4 {
+  /* text-transform: uppercase; */
+  color: white;
+  font-weight: 500;
+  font-size: 26px;
+  font-family: "Roboto";
+  margin-bottom: 30px;
+}
+/* links in individual sections */
+.indisection a {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.625);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+form {
+  display: flex;
+}
+/* styling of input form */
+form input {
+  height: 50px;
+  width: 200px;
+  /* curving only left border */
+  border-radius: 25px 0 0 25px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 0px;
+}
+/* submit button styling */
+form submit {
+  height: 50px;
+  width: 50px;
+  background-color: #d0a904;
+  /* curving only right border */
+  border-radius: 0 25px 25px 0;
+  padding: 13px 0px 0px 10px;
+  font-size: 18px;
+  border: 0px;
+  cursor: pointer;
+}
+/* image styling inside the submit button */
+submit img {
+  height: 20px;
+  width: 20px;
+}

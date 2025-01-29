@@ -1,0 +1,431 @@
+<html>
+  <head>
+    <title>Advance CSS Assignment</title>
+    <link rel="stylesheet" href="AdvanceCssAssignment2.css" />
+    <!-- Font imported from Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- header contains 2 sections navbar and heading section -->
+    <header>
+      <!-- paddLR is common padding from left and right which is 200px
+        and paddTB is top and bottom padding which is 100px -->
+      <div class="navbar paddLR">
+        <div class="headLogo">
+          <!-- main logo in navbar -->
+          <img src="ex-1\images\head_logo.jpg" />
+        </div>
+        <div class="navLinks">
+          <!-- all links present on navbar -->
+          <a href="#" class="linkItem"><p>Home</p></a>
+          <a href="#" class="linkItem"><p>About</p></a>
+          <a href="#" class="linkItem"><p>Services</p></a>
+          <a href="#" class="linkItem"><p>Portfolio</p></a>
+          <a href="#" class="linkItem"><p>Price</p></a>
+          <a href="#" class="linkItem"><p>Blog</p></a>
+          <!-- small arrow near blog -->
+          <img src="ex-1\images\icons\darrow.svg" class="darrow" />
+          <img src="ex-1\images\mail.jpg" class="mail" />
+        </div>
+      </div>
+      <!-- heading container containing top heading with 2 buttons -->
+      <div class="headingContainer">
+        <div class="heading paddLR paddTB bgColorOpacity">
+          <div class="topHeading">
+            <h2>
+              <span class="normal">We Will </span>Make
+              <span class="normal"> Your </span>Bussines<br />
+              <span class="normal"> Great Again</span>
+            </h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur <br />adipisicing elit animi
+            dicta
+          </p>
+
+          <div class="headingButtons">
+            <button class="hovering">Contact Us</button>
+            <button class="hovering">Discover Now</button>
+          </div>
+          <!-- a down arrow at bottom of the heading section -->
+          <img src="ex-1\images\icons\darrow.png" />
+        </div>
+      </div>
+    </header>
+    <!-- Section 1 starts from here which contains introduction and an image -->
+    <div class="section1 paddLR paddTB">
+      <div class="subSection1">
+        <div class="helloWorld">
+          <!-- main heading of this section -->
+          <h2><span class="normal">Hello </span>World</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus rem
+            quidem sequi odit perspiciatis provident vel omnis quam, Lorem ipsum
+            consectetur quidem sequi adipisicing elit. Minus rem nulla quisquam.
+          </p>
+          <!-- small icons with sentences -->
+          <div class="imageContainer1">
+            <img src="ex-1\images\icons\i-diamond_b.svg" />
+            <h5>Exploring your area of activity.</h5>
+          </div>
+          <div class="imageContainer1">
+            <img src="ex-1\images\icons\i-wallet_b.svg" />
+            <h5>Competitive Analysis.</h5>
+          </div>
+          <div class="imageContainer1">
+            <img src="ex-1\images\icons\i-trophy_b.svg" />
+            <h5>Do the work in Time.</h5>
+          </div>
+        </div>
+        <!-- main image of this section -->
+        <div class="helloImage">
+          <img src="ex-1\images\img-3.jpg" />
+        </div>
+      </div>
+    </div>
+    <!-- second section start from here -->
+    <div class="section2">
+      <div class="services paddLR bgColorOpacity">
+        <!-- main heading of this section -->
+        <h2>
+          <span class="normal">Some of our </span>best services<br />
+          <span class="normal"> to solve your problems</span>
+        </h2>
+        <!-- service sontainer contais individual services and about them -->
+        <div class="serviceContainer">
+          <div class="individualService">
+            <!-- this is individual service container containing
+              service logo their heading and about them -->
+            <div class="whiteOpacity">
+              <img src="ex-1\images\icons\i-shield.svg" />
+            </div>
+            <h5>Digital Marketing</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. iste
+              distinctio corrupti delectus magnam itaque.
+            </p>
+          </div>
+          <div class="individualService">
+            <div class="whiteOpacity">
+              <img src="ex-1\images\icons\i-shield.svg" />
+            </div>
+            <h5>Digital Marketing</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. iste
+              distinctio corrupti delectus magnam itaque.
+            </p>
+          </div>
+          <div class="individualService">
+            <div class="whiteOpacity">
+              <img src="ex-1\images\icons\i-shield.svg" />
+            </div>
+            <h5>Digital Marketing</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. iste
+              distinctio corrupti delectus magnam itaque.
+            </p>
+          </div>
+        </div>
+        <!-- order a service button -->
+        <button class="orderService hovering">Order a service</button>
+      </div>
+    </div>
+    <!-- Section 3 starts from here containing grid of images -->
+    <div class="section3 paddLR paddTB">
+      <div class="imageContentALL">
+        <div class="imageContent">
+          <!-- main heading of this sections -->
+          <h2>
+            Good Design
+            <span class="normal"> is obvious</span><br />
+            <span class="normal">Great Design is Transparent.</span>
+          </h2>
+          <h5>
+            About Joe ©
+            <span class="normal">
+              graphic designer, digital literacy teacher.</span
+            >
+          </h5>
+        </div>
+        <!-- some button links above the grid -->
+        <div class="imageButtons">
+          <button>Show All</button>
+          <button>Design</button>
+          <button>Code</button>
+          <button>Art</button>
+        </div>
+      </div>
+      <!-- images in grid format -->
+      <div class="imageGrid">
+        <div class="gridItem1"><img src="ex-1/images/12-min.jpg" /></div>
+        <div class="gridItem2"><img src="ex-1/images/2-min.jpg" /></div>
+        <div class="gridItem2"><img src="ex-1/images/2-min.jpg" /></div>
+        <div class="gridItem2"><img src="ex-1/images/2-min.jpg" /></div>
+        <div class="gridItem1"><img src="ex-1/images/12-min.jpg" /></div>
+        <div class="gridItem2"><img src="ex-1/images/2-min.jpg" /></div>
+        <div class="gridItem2"><img src="ex-1/images/2-min.jpg" /></div>
+      </div>
+    </div>
+    <!-- section 4 starts from here containing logos 
+     with their names and numbers of company -->
+    <div class="section4">
+      <div class="numbers paddLR paddTB bgColorOpacity">
+        <div class="individualNumbers">
+          <div class="whiteOpacity">
+            <img src="ex-1\images\icons\i-team.svg" />
+          </div>
+          <!-- txtwhite class used for text in white -->
+          <h5 class="txtWhite">Unique Costumers:</h5>
+          <h2 class="txtWhite">3519+</h2>
+        </div>
+        <div class="individualNumbers">
+          <div class="whiteOpacity">
+            <img src="ex-1\images\icons\i-shield.svg" />
+          </div>
+          <h5 class="txtWhite">Completed Projects:</h5>
+          <h2 class="txtWhite">3519+</h2>
+        </div>
+        <div class="individualNumbers">
+          <div class="whiteOpacity">
+            <img src="ex-1\images\icons\i-diamond.svg" />
+          </div>
+          <!-- txtOrg class used for text in orange -->
+          <h5 class="txtOrg">Happy Users:</h5>
+          <h2 class="txtOrg">3519+</h2>
+        </div>
+        <div class="individualNumbers">
+          <div class="whiteOpacity">
+            <img src="ex-1\images\icons\i-trophy.svg" />
+          </div>
+          <h5 class="txtWhite">Honors and Awards:</h5>
+          <h2 class="txtWhite">3519+</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Section 5 Starts from here containing pricing plans -->
+    <div class="section5 paddLR paddTB">
+      <!-- Main heading of this section -->
+      <h2>
+        <span class="normal">Flexible </span>Pricing
+        <span class="normal"> Plans</span>
+      </h2>
+      <p>Lorem ipsum dolor consectetur adipisicing.</p>
+      <div class="priceContainer">
+        <!-- price container containing individual price columns -->
+        <div class="indiPrice">
+          <div class="topPrice">
+            <!-- price heading -->
+            <h4>Trial Version</h4>
+            <!-- about it -->
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam
+            </p>
+          </div>
+          <!-- benifits you get with plan -->
+          <div class="midPrice">
+            <h4>
+              <span class="big">free</span>
+            </h4>
+            <h5 class="wtDark">500gb drive space</h5>
+            <h5 class="wtDark">Unlimited messages</h5>
+            <h5 class="wtLight">Free Email address</h5>
+            <h5 class="wtLight">Friendly support</h5>
+          </div>
+          <!-- purchase button -->
+          <button class="priceButton hovering">Purchase</button>
+        </div>
+        <div class="indiPrice">
+          <div class="topPrice">
+            <h4>Regular</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam
+            </p>
+          </div>
+          <div class="midPrice">
+            <h4>
+              $
+              <span class="big">19</span>
+              /Month
+            </h4>
+            <h5 class="wtDark">500gb drive space</h5>
+            <h5 class="wtDark">Unlimited messages</h5>
+            <h5 class="wtDark">Free Email address</h5>
+            <h5 class="wtLight">Friendly support</h5>
+          </div>
+          <button class="priceButton hovering">Purchase</button>
+        </div>
+        <div class="indiPrice">
+          <div class="topPrice">
+            <h4>Entended</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam
+            </p>
+          </div>
+          <div class="midPrice">
+            <h4>
+              $
+              <span class="big">29</span>
+              /Month
+            </h4>
+            <h5 class="wtDark">500gb drive space</h5>
+            <h5 class="wtDark">Unlimited messages</h5>
+            <h5 class="wtDark">Free Email address</h5>
+            <h5 class="wtDark">Friendly support</h5>
+          </div>
+          <button class="priceButton hovering">Purchase</button>
+        </div>
+      </div>
+    </div>
+    <!-- Section 6 starts from here including About Us content -->
+    <div class="section6">
+      <div class="aboutUs paddLR paddTB bgColorOpacity">
+        <div class="topAboutUs">
+          <!-- main heading of this page -->
+          <h2>
+            Testimonials
+            <span class="normal"> About Us</span>
+          </h2>
+          <!-- right side top buttons -->
+          <div class="topButtons">
+            <button class="topButton topButtonStyle hovering">
+              <img src="ex-1/images/icons/larrow.png" />
+            </button>
+            <button class="topButton topButtonStyle hovering">
+              <img src="ex-1/images/icons/rarrow.png" />
+            </button>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit,quibusdam, esse odio!</p>
+        <div class="bottomAboutUs">
+          <!-- bottom part of about us with individual sections for every 
+           developer their image and about them -->
+          <div class="bottomAboutUsSection">
+            <img src="ex-1/images/t-1.jpeg" />
+            <h3>Robert Newmen</h3>
+            <h4>Microsoft Corporation</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              minima beatae optio animi natus molestias, quae eligendi deleniti
+              nesciunt earum non a ipsam tempora numquam odio praesentium esse
+              nihil dignissimos.
+            </p>
+          </div>
+          <div class="bottomAboutUsSection">
+            <img src="ex-1/images/t-2.jpeg" />
+            <h3>Robert Newmen</h3>
+            <h4>SpaceX</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              minima beatae optio animi natus molestias, quae eligendi deleniti
+              nesciunt earum non a ipsam tempora numquam odio praesentium esse
+              nihil dignissimos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 7 starts from here it contains blog posts -->
+    <div class="section7 paddLR paddTB">
+      <!-- main heading of this section -->
+      <h2>
+        <span class="normal">Latest </span>blog
+        <span class="normal"> posts</span>
+      </h2>
+      <p>Lorem ipsum dolor consectetur adipisicing.</p>
+      <!-- Blog container which contains individual blog columns -->
+      <div class="blogContainer">
+        <!-- individual blog columns with its image, heading, 
+         inside reading content 
+         and read more button -->
+        <div class="indiBlog">
+          <img src="ex-1/images/img-2.jpg" />
+          <div class="bottomBlog">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="blogButton hovering">Read More</button>
+          </div>
+        </div>
+        <div class="indiBlog">
+          <img src="ex-1/images/img-2.jpg" />
+          <div class="bottomBlog">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="blogButton hovering">Read More</button>
+          </div>
+        </div>
+        <div class="indiBlog">
+          <img src="ex-1/images/img-2.jpg" />
+          <div class="bottomBlog">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="blogButton hovering">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer sections starts from here  -->
+    <!-- footer section contains logo various links, 
+     email newsletter section and a copyright statement-->
+
+    <footer class="paddLR">
+      <img src="ex-1/images/logo-footer.jpg" />
+      <div class="footerMid">
+        <div class="indisection">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Support</a>
+          <a href="#">press</a>
+          <a href="#">Legal &amp; privacy</a>
+        </div>
+        <div class="indisection">
+          <h4>Quick Links</h4>
+          <a href="#">News</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="indisection">
+          <h4>Social</h4>
+          <a href="#">Facebook</a>
+          <a href="#">Google +</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+        <div class="indisection">
+          <h4>Subscribe Newsletter</h4>
+          <form>
+            <!-- form input type as email and a submit button next to it -->
+            <input type="email" placeholder="email" />
+            <submit>
+              <!-- image inside button -->
+              <img src="ex-1/images/icons/i-message_w.svg" />
+            </submit>
+          </form>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <!-- bottom part of footer with copyright section -->
+        <p>
+          Copyright &copy; all rights reserved late 2025 | Design and
+          development by Jatin Sinwaria
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
